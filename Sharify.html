@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharify - Share Your Files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0078d7;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        form button:hover {
+            background-color: #005cbf;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sharify</h1>
+        <p>Upload and share your files easily!</p>
+    </header>
+    <nav>
+        <a href="#upload">Upload Files</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="upload">
+        <h2>Upload Your Files</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Select a file:</label>
+            <input type="file" id="file" name="file" multiple accept="/">
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe your file..."></textarea>
+            
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <section id="about">
+        <h2>About Sharify</h2>
+        <p>Sharify is a platform where you can upload and share files of any type, including images, videos, audio, and text. Built with care by <strong>Saqib Sarwar</strong>, our goal is to make file sharing as easy and secure as possible.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, reach out through the following:</p>
+        <ul>
+            <a href="mailto:saqibsarwar003@gmail.com">Email</a>
+            <a href="https://www.instagram.com/saqib_sarwar003" target="_blank">Instagram</a>
+            <a href="https://youtube.com/@gameongamingyt-q6y" target="_blank">Youtube</a>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sharify. Developed by <strong>Saqib Sarwar</strong>.</p>
+    </footer>
+</body>
+</html>
